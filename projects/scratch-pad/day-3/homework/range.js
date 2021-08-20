@@ -24,9 +24,23 @@
 function range(start, end) {
     // YOUR CODE GOES BELOW HERE //
     
+    //create an empty array
+    var rangeArr = [];
     
+    //if end is greater than start, push all integers from start to end into array
+    if (start < end) {
+        for (var i = start; i <= end; i++) {
+            rangeArr.push(i);
+        }
+    //if start is greater than end, push integers into array in reverse  
+    } else if (start > end) {
+        for (var i = start; i >= end; i--) {
+            rangeArr.push(i);
+        }
+    }
     
-    
+    //return the range array
+    return rangeArr
     // YOUR CODE GOES ABOVE HERE //
 }
 
